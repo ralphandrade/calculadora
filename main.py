@@ -1,7 +1,7 @@
 while True:
     # usuario informa os numeros
-    x = str(input('informe o primeiro número: ')),replace(',', '.')
-    y =str(input('informe o segundo núemro: ')),replace(',','.')
+    x = str(input('informe o primeiro número: ')).replace(',', '.')
+    y =str(input('informe o segundo núemro: ')).replace(',','.')
 
     # converte para numeros decimais
     x = float(x)
@@ -30,3 +30,15 @@ while True:
         case _:
             print('operação inválida')
             continue
+
+# pergunta para o usuario se deseja continuar ou encerrar
+    continuar =input('Deseja continuar (s/n)? ')
+
+    # verifica a opção usuario
+    if continuar == 's':
+        continue
+    elif continuar == 'n':
+        break
+    else:
+        print('opção inválida')
+
